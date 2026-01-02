@@ -1,3 +1,4 @@
+export { default, metadata } from "../src/app/layout";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -15,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "ECS EDGE III | Endoscopic Cardiac Surgery Workshop",
   description:
-    "ECS EDGE III is a high-impact Endoscopic Cardiac Surgery workshop featuring international faculty, live endoscopic & robotic surgeries, wet lab training, and simulation-based learning in Kolkata, India.",
+    "ECS EDGE III is a hands-on Endoscopic Cardiac Surgery workshop with international faculty, live endoscopic & robotic surgeries, wet lab training, and simulation-based learning in Kolkata, India.",
   openGraph: {
     title: "ECS EDGE III – Endoscopic Cardiac Surgery Workshop",
     description:
