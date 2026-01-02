@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ecs-edge.vercel.app"),
   title: "ECS EDGE III | Endoscopic Cardiac Surgery Workshop",
   description:
     "ECS EDGE III is a high-impact Endoscopic Cardiac Surgery workshop featuring international faculty, live endoscopic & robotic surgeries, wet lab training, and simulation-based learning in Kolkata, India.",
@@ -31,6 +32,7 @@ export const metadata: Metadata = {
     images: ["/og-ecs-edge.jpg"],
   },
 };
+
 
 export default function RootLayout({
   children,
