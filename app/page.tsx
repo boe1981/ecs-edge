@@ -118,7 +118,6 @@ const nationalFaculty = [
   {
     name: "Dr. Ramprassath M S",
     title: "Senior Consultant Cardiothoracic Surgeon",
-    org: "Velammal Hospital",
     loc: "Madurai",
     photo: "/faculty/Ram-prasath.jpg", // case sensitive
   },
@@ -142,7 +141,7 @@ const courseLeadership = [
   {
     name: "Dr. Sandip Sardar",
     role: "Course Director",
-    org: "Consultant Cardiac Surgeon",
+    org: "Senior Consultant Cardiac Surgeon",
     loc: "Manipal Hospitals, Mukundapur, Kolkata",
     photo: "/faculty/sardar.jpg",
     highlight: true,
@@ -274,9 +273,6 @@ export default function Page() {
 
             <div className="leading-tight">
               <div className="text-sm font-semibold tracking-wide">ECS EDGE</div>
-              <div className="text-xs text-slate-300">
-                Endoscopic Cardiac Surgery Workshop
-              </div>
             </div>
           </div>
 
@@ -306,7 +302,7 @@ export default function Page() {
           <div>
             <div className="flex flex-wrap items-center gap-2">
               <Badge className="rounded-2xl bg-white/10 text-slate-100 hover:bg-white/10">
-                Simulation-heavy • Hands-on
+                Hands-on Simulation
               </Badge>
               <Badge className="rounded-2xl bg-white/10 text-slate-100 hover:bg-white/10">
                 Live Endoscopy Cases
@@ -314,12 +310,15 @@ export default function Page() {
               <Badge className="rounded-2xl bg-white/10 text-slate-100 hover:bg-white/10">
                 International Faculty
               </Badge>
+               <Badge className="rounded-2xl bg-white/10 text-slate-100 hover:bg-white/10">
+                Endorsed by IACTS & ATCVSWB
+              </Badge>
             </div>
 
             <h1 className="mt-5 text-3xl font-semibold leading-tight md:text-5xl">
               ECS EDGE III
               <span className="block text-slate-200">
-                Endoscopic Cardiac Surgery Workshop • Scientific Program
+                3rd Endoscopic Cardiac Surgery Workshop(ECS EDGE III)
               </span>
             </h1>
 
@@ -350,7 +349,7 @@ export default function Page() {
                 <span>
                   <span className="font-semibold">Format:</span>{" "}
                   <span className="text-slate-200">
-                    Talks • Live-in-Box • Dry Lab • Wet Lab Skill Stations
+                    Live Cases • Talks • Live-in-Box • Dry Lab • Wet Lab Skill Stations
                   </span>
                 </span>
               </div>
@@ -381,7 +380,7 @@ export default function Page() {
                 <Stethoscope className="h-4 w-4" /> Team-based learning
               </span>
               <span className="inline-flex items-center gap-2">
-                <Video className="h-4 w-4" /> Surgical video deconstruction
+                <Video className="h-4 w-4" /> Surgical video demonstration
               </span>
             </div>
           </div>
@@ -399,7 +398,7 @@ export default function Page() {
                       </span>
                     </div>
                     <div className="mt-1 text-sm text-slate-200">
-                      Consultant Cardiac Surgeon • Endoscopic Cardiac Surgery
+                      Senior Consultant Cardiac Surgeon 
                     </div>
                   </div>
 
@@ -563,8 +562,9 @@ export default function Page() {
                   <div className="font-semibold text-white">09:00–17:00 • LIVE SURGERY</div>
                   <ul className="mt-2 space-y-1">
                     <li>• Live Case 1: ECS MVR / ECS ASD — Ramprassath M S</li>
-                    <li>• Live Case 2: Robotic CABG — Sudarshan G T</li>
-                    <li>• Live Case 3: ECS AVR (Bioprosthesis) — Antonios Pitsis</li>
+                    <li>• Live Case 2: Robotic CABG — Sudarshan G T(Transmission from Bengaluru)</li>
+                    <li>• Live Case 3: ECS AVR (Bioprosthesis) — Antonios Pitsis(Transmission from 
+Thessaloniki, Greece)</li>
                   </ul>
                 </div>
 
