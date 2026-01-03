@@ -119,7 +119,7 @@ const nationalFaculty = [
     title: "Senior Consultant & Additional Director",
     org: "Fortis Hospital",
     loc: "Bengaluru",
-    photo: "/faculty/sudarshan.png",
+    photo: "/faculty/sudarshan.jpg",
   },
   {
     name: "Dr. Pradeep Narayan",
