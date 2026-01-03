@@ -36,13 +36,6 @@ const internationalFaculty = [
     photo: "/faculty/pitsis.jpg",
   },
   {
-    name: "Dr. Joseph Zacharias",
-    title: "Consultant Cardio-Thoracic Surgeon",
-    org: "Lancashire Cardiac Centre",
-    loc: "Blackpool, UK",
-    photo: "/faculty/zacharias.jpg",
-  },
-  {
     name: "Dr. Mario Castillo-Sang",
     title: "Surgical Director, Mitral Valve & Heart Failure Therapies",
     org: "St. Elizabeth Healthcare",
