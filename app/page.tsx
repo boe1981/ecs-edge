@@ -318,7 +318,7 @@ export default function Page() {
             <h1 className="mt-5 text-3xl font-semibold leading-tight md:text-5xl">
               ECS EDGE III
               <span className="block text-slate-200">
-                3rd Endoscopic Cardiac Surgery Workshop(ECS EDGE III)
+                3rd Endoscopic Cardiac Surgery Workshop
               </span>
             </h1>
 
