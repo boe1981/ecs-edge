@@ -678,6 +678,36 @@ export default function Page() {
         </div>
       </section>
 
+      <SponsorSection />
+
+      function SponsorSection() {
+  return (
+    <section id="sponsors" className="mx-auto max-w-6xl px-4 py-12 md:py-14">
+      <h2 className="text-2xl font-semibold md:text-3xl">Sponsors</h2>
+      <p className="mt-2 text-sm text-slate-300">
+        Thank you to our sponsors and academic partner supporting ECS EDGE III.
+      </p>
+
+      <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+        {[
+          ...sponsors.platinum.map((s) => ({ ...s, tier: "Platinum" })),
+          ...sponsors.gold.map((s) => ({ ...s, tier: "Gold" })),
+          ...sponsors.partners.map((s) => ({ ...s, tier: "Academic Partner" })),
+        ].map((s) => (
+          <div key={s.name} className="rounded-3xl border border-white/10 bg-white/5 p-6">
+            <div className="text-xs text-slate-400">{s.tier}</div>
+            <div className="mt-2 flex items-center gap-3">
+              <img src={s.logo} alt={s.name} className="h-10 w-10 object-contain" loading="lazy" />
+              <div className="text-sm font-semibold text-slate-200">{s.name}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+
       {/* Agenda / Scientific Program (LEGIBILITY FIXED) */}
       <section
         id="agenda"
