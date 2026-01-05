@@ -148,6 +148,39 @@ const courseLeadership = [
     highlight: false,
   },
 ];
+const sponsors = {
+  platinum: [
+    {
+      name: "Grena",
+      logo: "/sponsors/grena.png",
+      url: "#",
+    },
+    {
+      name: "Meril Life Sciences",
+      logo: "/sponsors/meril.png",
+      url: "#",
+    },
+  ],
+
+  gold: [
+    {
+      name: "Edwards Lifesciences",
+      logo: "/sponsors/edwards.png",
+      url: "#",
+    },
+  ],
+
+  silver: [],
+
+  partners: [
+    {
+      name: "Manipal Hospitals",
+      logo: "/sponsors/manipal.png",
+      url: "https://www.manipalhospitals.com",
+    },
+  ],
+};
+
 
 function FacultyCard({
   name,
@@ -245,6 +278,133 @@ function LeadershipCard({
     </Card>
   );
 }
+function SponsorGrid({
+  title,
+  subtitle,
+  items,
+  badge,
+}: {
+  title: string;
+  subtitle?: string;
+  badge: "Platinum" | "Gold" | "Silver" | "Partner";
+  items: { name: string; logo: string; url?: string }[];
+}) {
+  const badgeStyle =
+    badge === "Platinum"
+      ? "border-amber-300/30 bg-amber-300/10 text-amber-200"
+      : badge === "Gold"
+      ? "border-yellow-300/20 bg-yellow-300/10 text-yellow-200"
+      : badge === "Silver"
+      ? "border-slate-300/20 bg-slate-300/10 text-slate-200"
+      : "border-cyan-300/20 bg-cyan-300/10 text-cyan-200";
+
+  return (
+    <div className="mt-8">
+      <div className="flex flex-wrap items-end justify-between gap-3">
+        <div>
+          <div className="inline-flex items-center gap-2">
+            <span className={`rounded-2xl border px-3 py-1 text-xs ${badgeStyle}`}>{badge}</span>
+            <h3 className="text-base font-semibold text-slate-100">{title}</h3>
+          </div>
+          {subtitle ? <p className="mt-2 text-sm text-slate-300">{subtitle}</p> : null}
+        </div>
+      </div>
+
+      <div className="mt-4 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        {items.map((s) => {
+          const card = (
+            <Card key={s.name} className="rounded-3xl border-white/10 bg-white/5 hover:bg-white/7 transition-colors">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-4">
+                  <div className="relative grid h-14 w-14 place-items-center overflow-hidden rounded-2xl bg-white/10 ring-1 ring-white/15">
+                    {/* Using normal img to keep it simple; switch to next/image if you want blur here too */}
+                    <img src={s.logo} alt={s.name} className="h-10 w-10 object-contain" loading="lazy" />
+                  </div>
+                  <div className="min-w-0">
+                    <div className="truncate text-sm font-semibold text-slate-200 hover:text-cyan-300 transition-colors">
+                      {s.name}
+                    </div>
+                    <div className="mt-1 text-xs text-slate-400">Sponsor</div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          );
+
+          return s.url && s.url !== "#"
+            ? (
+              <a key={s.name} href={s.url} target="_blank" rel="noreferrer" className="block">
+                {card}
+              </a>
+            )
+            : (
+              <div key={s.name}>{card}</div>
+            );
+        })}
+      </div>
+    </div>
+  );
+}
+
+function SponsorSection() {
+  return (
+    <section id="sponsors" className="mx-auto max-w-6xl px-4 py-12 md:py-14">
+      <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
+        <div>
+          <h2 className="text-2xl font-semibold md:text-3xl">Sponsors</h2>
+          <p className="mt-2 max-w-3xl text-sm text-slate-300">
+            Our partners help make high-fidelity simulation, wet-lab training, and global faculty participation possible.
+          </p>
+        </div>
+
+        <div className="flex flex-col gap-2 sm:flex-row">
+          <Button
+            className="rounded-2xl"
+            onClick={() => window.open(`mailto:${SPONSOR_CONTACT_EMAIL}?subject=ECS%20EDGE%20III%20Sponsorship%20Inquiry`, "_self")}
+          >
+            Become a Sponsor <ArrowRight className="ml-2 h-4 w-4" />
+          </Button>
+
+          <Button
+            variant="secondary"
+            className="rounded-2xl bg-white/10 text-slate-100 hover:bg-white/15"
+            onClick={() => window.open(SPONSOR_PROSPECTUS_URL, "_blank")}
+          >
+            Download Prospectus
+          </Button>
+        </div>
+      </div>
+
+      <SponsorGrid
+        badge="Platinum"
+        title="Platinum Sponsors"
+        subtitle="Highest visibility across stage, live sessions, and workshop materials."
+        items={sponsors.platinum}
+      />
+
+      <SponsorGrid
+        badge="Gold"
+        title="Gold Sponsors"
+        subtitle="Strong brand presence during live sessions and hands-on stations."
+        items={sponsors.gold}
+      />
+
+      <SponsorGrid
+        badge="Silver"
+        title="Silver Sponsors"
+        subtitle="Recognition across select sessions and workshop collateral."
+        items={sponsors.silver}
+      />
+
+      <SponsorGrid
+        badge="Partner"
+        title="Partners"
+        subtitle="Academic and institutional collaborators supporting training excellence."
+        items={sponsors.partners}
+      />
+    </section>
+  );
+}
 
 export default function Page() {
   return (
@@ -274,6 +434,8 @@ export default function Page() {
             <a className="hover:text-white" href="#faculty">Faculty</a>
             <a className="hover:text-white" href="#agenda">Program</a>
             <a className="hover:text-white" href="#register">Register</a>
+            <a className="hover:text-white" href="#sponsors">Sponsors</a>
+
           </nav>
 
           <Button className="rounded-2xl" asChild>
@@ -638,6 +800,7 @@ Thessaloniki, Greece)</li>
           </div>
         </div>
       </section>
+      <SponsorSection />
 
       {/* Register */}
       <section id="register" className="mx-auto max-w-6xl px-4 pb-16 pt-8 md:pb-24">
