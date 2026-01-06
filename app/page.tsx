@@ -153,26 +153,10 @@ const courseLeadership = [
 ];
 
 const sponsors = [
-  { 
-    name: "Meril Life Sciences", 
-    logo: "/sponsors/meril.png", 
-    url: "#" 
-  },
-  { 
-    name: "Grena", 
-    logo: "/sponsors/grena.png", 
-    url: "#" 
-  },
-  { 
-    name: "Edwards Lifesciences", 
-    logo: "/sponsors/edwards.png", 
-    url: "#" 
-  },
-  { 
-    name: "Manipal Hospitals (Academic Partner)", 
-    logo: "/sponsors/manipal.png", 
-    url: "https://www.manipalhospitals.com" 
-  },
+  { logo: "/sponsors/meril.png", url: "#" },
+  { logo: "/sponsors/grena.png", url: "#" },
+  { logo: "/sponsors/edwards.png", url: "#" },
+  { logo: "/sponsors/manipal.png", url: "https://www.manipalhospitals.com" },
 ];
 
 
@@ -275,86 +259,65 @@ function LeadershipCard({
 
 function SponsorSection() {
   return (
-    <section id="sponsors" className="mx-auto max-w-6xl px-4 pb-16 pt-6 md:pb-20">
-      <Card className="rounded-3xl border-white/15 bg-white/5">
-        <CardContent className="p-6 md:p-8">
-          <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-            <div>
-              <h2 className="text-2xl font-semibold text-white md:text-3xl">
-                Sponsors & Partners
-              </h2>
-              <p className="mt-2 max-w-3xl text-sm leading-relaxed text-slate-200">
-                Thank you to our sponsors and academic partner supporting ECS EDGE III.
-              </p>
+    <section id="sponsors" className="mx-auto max-w-6xl px-4 py-12 md:py-14">
+      <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
+        <div>
+          <h2 className="text-2xl font-semibold text-white md:text-3xl">Sponsors</h2>
+          <p className="mt-2 max-w-3xl text-sm leading-relaxed text-slate-200">
+            Our sponsors and academic partner support high-fidelity training and global faculty participation.
+          </p>
+        </div>
+      </div>
+
+      {/* Logos only */}
+      <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
+        {sponsors.map((s, idx) => {
+          const logoCard = (
+            <div className="rounded-3xl border border-white/15 bg-white/5 p-5 shadow-sm backdrop-blur">
+              <div className="relative mx-auto h-16 w-full sm:h-20 md:h-24">
+                <Image
+                  src={s.logo}
+                  alt="Sponsor logo"
+                  fill
+                  sizes="(max-width: 640px) 45vw, (max-width: 1024px) 25vw, 240px"
+                  className="object-contain"
+                  priority={idx < 2} // keeps the first 2 crisp early
+                />
+              </div>
             </div>
+          );
 
-            <div className="flex flex-col gap-2 sm:flex-row">
-              <Button className="rounded-2xl" asChild>
-                <a
-                  href={`mailto:${SPONSOR_CONTACT_EMAIL}?subject=ECS%20EDGE%20III%20Sponsorship%20Inquiry`}
-                >
-                  Become a Sponsor <ArrowRight className="ml-2 h-4 w-4" />
-                </a>
-              </Button>
+          return s.url && s.url !== "#"
+            ? (
+              <a
+                key={s.logo}
+                href={s.url}
+                target="_blank"
+                rel="noreferrer"
+                className="block transition-transform hover:-translate-y-0.5"
+              >
+                {logoCard}
+              </a>
+            )
+            : (
+              <div key={s.logo} className="transition-transform hover:-translate-y-0.5">
+                {logoCard}
+              </div>
+            );
+        })}
+      </div>
 
-              {SPONSOR_PROSPECTUS_URL !== "#" ? (
-                <Button
-                  variant="secondary"
-                  className="rounded-2xl bg-white/10 text-slate-100 hover:bg-white/15"
-                  asChild
-                >
-                  <a href={SPONSOR_PROSPECTUS_URL} target="_blank" rel="noreferrer">
-                    Download Prospectus
-                  </a>
-                </Button>
-              ) : null}
-            </div>
-          </div>
-
-          <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {sponsors.map((s) => {
-              const tile = (
-                <div className="rounded-3xl border border-white/10 bg-slate-950/30 p-5 transition-colors hover:bg-slate-950/40">
-                  <div className="flex items-center gap-4">
-                    <div className="grid h-14 w-14 place-items-center overflow-hidden rounded-2xl bg-white/10 ring-1 ring-white/15">
-                      <img
-                        src={s.logo}
-                        alt={s.name}
-                        className="h-10 w-10 object-contain"
-                        loading="lazy"
-                      />
-                    </div>
-                    <div className="min-w-0">
-                      <div className="truncate text-sm font-semibold text-slate-200 transition-colors hover:text-cyan-200">
-                        {s.name}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              );
-
-              return s.url && s.url !== "#"
-                ? (
-                  <a
-                    key={s.name}
-                    href={s.url}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="block"
-                  >
-                    {tile}
-                  </a>
-                )
-                : (
-                  <div key={s.name}>{tile}</div>
-                );
-            })}
-          </div>
-        </CardContent>
-      </Card>
+      {/* optional contact line */}
+      <div className="mt-6 text-sm text-slate-300">
+        Sponsorship queries:{" "}
+        <a className="text-slate-200 underline hover:text-white" href={`mailto:${SPONSOR_CONTACT_EMAIL}`}>
+          {SPONSOR_CONTACT_EMAIL}
+        </a>
+      </div>
     </section>
   );
 }
+
 
 export default function Page() {
   return (
