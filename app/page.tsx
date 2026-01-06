@@ -152,7 +152,7 @@ const courseLeadership = [
   },
 ];
 
-cconst sponsors = [
+const sponsors = [
   { 
     name: "Meril Life Sciences", 
     logo: "/sponsors/meril.png", 
