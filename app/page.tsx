@@ -640,21 +640,120 @@ export default function Page() {
       </section>
 
       {/* Agenda / Scientific Program */}
-      <section
-        id="agenda"
-        className="mx-auto max-w-6xl px-4 py-12 md:py-14 [text-shadow:0_1px_1px_rgba(0,0,0,0.35)]"
-      >
-        <div>
-          <h2 className="text-2xl font-semibold text-white md:text-3xl">Scientific Program</h2>
-          <p className="mt-2 max-w-3xl text-sm leading-relaxed text-slate-200">
-            Kolkata • 24–25 January — Live endoscopic and robotic surgeries, structured core teaching, global virtual sessions,
-            live-in-a-box demonstrations, and hands-on wet lab training.
-          </p>
+     {/* Scientific Program */}
+<section
+  id="agenda"
+  className="mx-auto max-w-6xl px-4 py-12 md:py-14 [text-shadow:0_1px_1px_rgba(0,0,0,0.35)]"
+>
+  <div>
+    <h2 className="text-2xl font-semibold text-white md:text-3xl">Scientific Program</h2>
+    <p className="mt-2 max-w-3xl text-sm leading-relaxed text-slate-200">
+      Kolkata • 24–25 January — Live endoscopic and robotic surgeries, structured core teaching, global virtual sessions,
+      live-in-a-box demonstrations, and hands-on wet lab training.
+    </p>
+  </div>
+
+  <div className="mt-6 grid gap-6 md:grid-cols-2">
+    {/* DAY 1 */}
+    <div className="rounded-3xl border border-white/15 bg-white/5">
+      <div className="p-6">
+        <div className="text-xs font-semibold tracking-wide text-slate-200/90">DAY 1 • January 24</div>
+        <div className="mt-1 text-base font-semibold text-white">
+          Live Surgery • ECS Interactive Core • Global ECS (Virtual)
         </div>
 
-        {/* Your existing program blocks continue here unchanged */}
-        {/* ... keep the rest of your agenda content as-is ... */}
-      </section>
+        <div className="mt-4 space-y-4 text-[15px] leading-relaxed text-slate-200">
+          <div className="rounded-2xl border border-white/15 bg-slate-900/50 p-4">
+            <div className="font-semibold text-white">08:30–09:00</div>
+            <div>Registration & Welcome</div>
+            <div className="mt-1 text-slate-300">
+              Guest Lecture: <span className="text-slate-100">Will the Heart Still Need Hands?</span> — Kunal Sarkar
+            </div>
+          </div>
+
+          <div className="rounded-2xl border border-white/15 bg-slate-900/50 p-4">
+            <div className="font-semibold text-white">09:00–17:00 • LIVE SURGERY</div>
+            <ul className="mt-2 space-y-1">
+              <li>• Live Case 1: ECS MVR / ECS ASD — Ramprassath M S</li>
+              <li>• Live Case 2: Robotic CABG — Sudarshan G T (Transmission from Bengaluru)</li>
+              <li>• Live Case 3: ECS AVR (Bioprosthesis) — Antonios Pitsis (Transmission from Thessaloniki, Greece)</li>
+            </ul>
+          </div>
+
+          <div className="rounded-2xl border border-white/15 bg-slate-900/50 p-4">
+            <div className="font-semibold text-white">09:00–14:00 • ECS INTERACTIVE CORE SESSION</div>
+            <div className="mt-2">Why ECS • Case Selection • Preparation</div>
+            <div>Anaesthesia (SLV, TEE, ERAS)</div>
+            <div>Setup, Ports, Imaging • CPB in ECS</div>
+            <div className="mt-2 text-slate-300">Sandip Sardar • Monalisa Datta</div>
+          </div>
+
+          <div className="rounded-2xl border border-white/15 bg-slate-900/50 p-4">
+            <div className="font-semibold text-white">16:00–18:30 • GLOBAL ECS (VIRTUAL)</div>
+            <ul className="mt-2 space-y-1">
+              <li>• Setup → precision in 3D totally endoscopic surgery — Jae Suk Yoo (South Korea)</li>
+              <li>• Endoscopic Double Valve Replacement — Muhammad Ibrahim Azmi (Malaysia)</li>
+              <li>• Totally Endoscopic Mitral Valve Replacement — Evandro Lopes (Brazil)</li>
+              <li>• Robotic Totally Endoscopic Mitral Valve Repair — Sheng (China)</li>
+              <li>• Building an ECS program — Mario Castillo-Sang (USA)</li>
+              <li>• Technique of Endo-CABG — Abdullah Kaya (Belgium)</li>
+              <li>• Endoscopic Redo-Mitral Valve Surgery — Nguyen Cong Huu (Vietnam)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* DAY 2 */}
+    <div className="rounded-3xl border border-white/15 bg-white/5">
+      <div className="p-6">
+        <div className="text-xs font-semibold tracking-wide text-slate-200/90">DAY 2 • January 25</div>
+        <div className="mt-1 text-base font-semibold text-white">
+          Live-in-Box ECS • Interactive Discussion • Wet Lab
+        </div>
+
+        <div className="mt-4 space-y-4 text-[15px] leading-relaxed text-slate-200">
+          <div className="rounded-2xl border border-white/15 bg-slate-900/50 p-4">
+            <div className="font-semibold text-white">09:00–11:00 • Live-in-Box ECS</div>
+            <ul className="mt-2 space-y-1">
+              <li>• Endoscopic Mitral Valve Replacement</li>
+              <li>• Endoscopic Aortic Valve Replacement</li>
+              <li>• Endoscopic Tricuspid Valve Repair</li>
+              <li>• Endoscopic BITA harvesting & Endo-CABG</li>
+              <li>• Port Access ASD Closure (without utility port)</li>
+              <li>• Video Recording & Editing</li>
+            </ul>
+          </div>
+
+          <div className="rounded-2xl border border-white/15 bg-slate-900/50 p-4">
+            <div className="font-semibold text-white">11:00–12:00 • Interactive Discussion</div>
+            <div className="mt-2">
+              Anaesthesia: One-lung ventilation • regional blocks • ERAS • troubleshooting
+            </div>
+            <div className="mt-1">
+              Perfusion: specialized circuit • modified cardioplegia • ECS protocols • troubleshooting
+            </div>
+          </div>
+
+          <div className="rounded-2xl border border-white/15 bg-slate-900/50 p-4">
+            <div className="font-semibold text-white">11:00–14:00 • ECS Wet Lab</div>
+            <div className="mt-2">Endoscopic MVR / Endoscopic AVR modules</div>
+            <div className="mt-2 text-slate-300">Closing remarks • feedback • certificates</div>
+          </div>
+
+          <div className="rounded-2xl border border-white/15 bg-slate-900/50 p-4">
+            <div className="font-semibold text-white">Invitation</div>
+            <p className="mt-2">
+              This focused academic program provides a clear, real-world roadmap for surgeons aiming to initiate or advance an Endoscopic Cardiac Surgery program.
+            </p>
+            <div className="mt-2 text-slate-300">Warm regards — Sandip Sardar, Course Director</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Register */}
       <section id="register" className="mx-auto max-w-6xl px-4 pb-16 pt-8 md:pb-24">
