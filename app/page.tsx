@@ -152,16 +152,29 @@ const courseLeadership = [
   },
 ];
 
-const sponsors = [
-  { name: "Grena", logo: "/sponsors/grena.png", url: "#" },
-  { name: "Meril Life Sciences", logo: "/sponsors/meril.png", url: "#" },
-  { name: "Edwards Lifesciences", logo: "/sponsors/edwards.png", url: "#" },
-  {
-    name: "Manipal Hospitals (Academic Partner)",
-    logo: "/sponsors/manipal.png",
-    url: "https://www.manipalhospitals.com",
+cconst sponsors = [
+  { 
+    name: "Meril Life Sciences", 
+    logo: "/sponsors/meril.png", 
+    url: "#" 
+  },
+  { 
+    name: "Grena", 
+    logo: "/sponsors/grena.png", 
+    url: "#" 
+  },
+  { 
+    name: "Edwards Lifesciences", 
+    logo: "/sponsors/edwards.png", 
+    url: "#" 
+  },
+  { 
+    name: "Manipal Hospitals (Academic Partner)", 
+    logo: "/sponsors/manipal.png", 
+    url: "https://www.manipalhospitals.com" 
   },
 ];
+
 
 function FacultyCard({
   name,
