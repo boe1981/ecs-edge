@@ -159,11 +159,12 @@ const courseLeadership = [
 
 
 const sponsors = [
-  { name: "Meril Life Sciences", logo: "/sponsors/meril.png", url: "#" },
-  { name: "Grena", logo: "/sponsors/grena.png", url: "#" },
-  { name: "USB Medical", logo: "/sponsors/usb-medical.png", url: "#" },
-  { name: "Edwards Lifesciences", logo: "/sponsors/edwards.png", url: "#" },
+  { logo: "/sponsors/meril.png" },
+  { logo: "/sponsors/grena.png" },
+  { logo: "/sponsors/usb-medical.png" },
+  { logo: "/sponsors/edwards.png" },
 ];
+
 
 
 function FacultyCard({
