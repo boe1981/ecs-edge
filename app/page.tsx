@@ -159,10 +159,10 @@ const courseLeadership = [
 
 
 const sponsors = [
-  { logo: "/sponsors/meril.png", url: "#" },
-  { logo: "/sponsors/grena.png", url: "#" },
-  { logo: "/sponsors/edwards.png", url: "#" },
-  { logo: "/sponsors/manipal.png", url: "https://www.manipalhospitals.com" },
+  { name: "Meril Life Sciences", logo: "/sponsors/meril.png", url: "#" },
+  { name: "Grena", logo: "/sponsors/grena.png", url: "#" },
+  { name: "USB Medical", logo: "/sponsors/usb-medical.png", url: "#" },
+  { name: "Edwards Lifesciences", logo: "/sponsors/edwards.png", url: "#" },
 ];
 
 
