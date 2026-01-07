@@ -12,26 +12,27 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+import type { Metadata } from "next";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ecs-edge.vercel.app"),
-  title: "ECS EDGE III | Endoscopic Cardiac Surgery Workshop",
+  metadataBase: new URL("https://ecsedge.org"),
+  title: "ECS EDGE III | Endoscopic Cardiac Surgery Workshop India",
   description:
-    "ECS EDGE III is a high-impact Endoscopic Cardiac Surgery workshop featuring international faculty, live endoscopic & robotic surgeries, wet lab training, and simulation-based learning in Kolkata, India.",
+    "ECS EDGE III is a premier endoscopic cardiac surgery workshop in India featuring live cases, simulation, wet lab training, and international faculty at Manipal Hospitals, Kolkata.",
   openGraph: {
-    title: "ECS EDGE III – Endoscopic Cardiac Surgery Workshop",
+    title: "ECS EDGE III | Endoscopic Cardiac Surgery Workshop India",
     description:
-      "Live endoscopic & robotic cases • International faculty • Wet lab • Simulation • Kolkata • Jan 24–25",
+      "Live cases, simulation, wet lab training, and international faculty at Manipal Hospitals, Kolkata.",
+    url: "https://ecsedge.org",
     images: ["/og-ecs-edge.jpg"],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ECS EDGE III – Endoscopic Cardiac Surgery Workshop",
-    description:
-      "Live endoscopic & robotic cases • International faculty • Wet lab • Simulation • Kolkata • Jan 24–25",
     images: ["/og-ecs-edge.jpg"],
   },
 };
+
 
 
 export default function RootLayout({
@@ -47,3 +48,8 @@ export default function RootLayout({
     </html>
   );
 }
+export const metadata = {
+  title: "ECS EDGE III | Endoscopic Cardiac Surgery Workshop India",
+  description:
+    "ECS EDGE III is a premier endoscopic cardiac surgery workshop in India featuring live cases, simulation, wet lab training, and international faculty at Manipal Hospitals, Kolkata.",
+};
