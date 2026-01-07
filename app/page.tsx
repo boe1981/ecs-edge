@@ -140,7 +140,6 @@ const courseLeadership = [
     org: "Senior Consultant Cardiac Surgeon",
     loc: "Manipal Hospitals, Mukundapur, Kolkata",
     photo: "/faculty/sardar.jpg",
-    highlight: true,
   },
   {
     name: "Dr. Monalisa Datta",
@@ -148,9 +147,16 @@ const courseLeadership = [
     org: "Senior Consultant Cardiac Anaesthesiologist",
     loc: "Manipal Hospitals, Mukundapur, Kolkata",
     photo: "/faculty/datta.jpg",
-    highlight: false,
+  },
+  {
+    name: "Dr. Evandro Lopes",
+    role: "Guest Course Co-Director",
+    org: "Consultant Cardiac Surgeon",
+    loc: "Campo Grande, Brazil",
+    photo: "/faculty/Lopes.jpg",
   },
 ];
+
 
 const sponsors = [
   { logo: "/sponsors/meril.png", url: "#" },
