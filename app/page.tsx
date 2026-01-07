@@ -178,12 +178,13 @@ function FacultyCard({
       <CardContent className="p-6">
         <div className="mb-4 flex justify-center">
           <div className="relative h-24 w-24 overflow-hidden rounded-full bg-white/10 ring-1 ring-white/20">
-            <img
-              src={photo || "/faculty/placeholder.jpg"}
-              alt={name}
-              className="h-full w-full object-cover grayscale transition-all duration-300 hover:grayscale-0"
-              loading="lazy"
-            />
+           <img
+  src={photo || "/faculty/placeholder.jpg"}
+  alt={name}
+  className="h-full w-full object-cover"
+  loading="lazy"
+/>
+
           </div>
         </div>
 
@@ -236,17 +237,12 @@ function LeadershipCard({
           <div className="min-w-0">
             <div className="text-xs text-slate-300">{role}</div>
 
-            {highlight ? (
-              <div className="mt-1 text-xl font-semibold text-amber-300 relative inline-block">
-                <span className="after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-gradient-to-r after:from-amber-400 after:to-yellow-300 after:opacity-90 after:rounded-full">
-                  {name}
-                </span>
-              </div>
-            ) : (
-              <div className="mt-1 text-xl font-semibold text-slate-200 transition-colors hover:text-cyan-200">
-                {name}
-              </div>
-            )}
+            <div className="mt-1 text-xl font-semibold text-slate-200 relative inline-block">
+  <span className="after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:bg-slate-400/50 after:rounded-full">
+    {name}
+  </span>
+</div>
+
 
             <div className="mt-2 text-sm text-slate-200/90">{org}</div>
             <div className="mt-1 text-sm text-slate-300">{loc}</div>
