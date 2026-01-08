@@ -12,34 +12,34 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-import type { Metadata } from "next";
-
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ecsedge.org"),
-  title: "ECS EDGE III | Endoscopic Cardiac Surgery Workshop India",
+  title: "ECS EDGE III | Endoscopic Cardiac Surgery Workshop",
   description:
-    "ECS EDGE III is a premier endoscopic cardiac surgery workshop in India featuring live cases, simulation, wet lab training, and international faculty at Manipal Hospitals, Kolkata.",
+    "ECS EDGE III — 3rd Endoscopic Cardiac Surgery Workshop (Kolkata). Live cases, simulation, wet lab, and international faculty.",
+  metadataBase: new URL("https://ecsedge.org"),
   openGraph: {
-    title: "ECS EDGE III | Endoscopic Cardiac Surgery Workshop India",
+    title: "ECS EDGE III | Endoscopic Cardiac Surgery Workshop",
     description:
-      "Live cases, simulation, wet lab training, and international faculty at Manipal Hospitals, Kolkata.",
+      "Live cases • Simulation • Wet lab • International faculty • Kolkata",
     url: "https://ecsedge.org",
-    images: ["/og-ecs-edge.jpg"],
+    siteName: "ECS EDGE",
+    images: [{ url: "/og-ecs-edge.jpg", width: 1200, height: 630, alt: "ECS EDGE III" }],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
+    title: "ECS EDGE III | Endoscopic Cardiac Surgery Workshop",
+    description:
+      "Live cases • Simulation • Wet lab • International faculty • Kolkata",
     images: ["/og-ecs-edge.jpg"],
   },
 };
 
-
-
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
@@ -48,8 +48,3 @@ export default function RootLayout({
     </html>
   );
 }
-export const metadata = {
-  title: "ECS EDGE III | Endoscopic Cardiac Surgery Workshop India",
-  description:
-    "ECS EDGE III is a premier endoscopic cardiac surgery workshop in India featuring live cases, simulation, wet lab training, and international faculty at Manipal Hospitals, Kolkata.",
-};
