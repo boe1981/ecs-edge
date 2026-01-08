@@ -273,42 +273,26 @@ function SponsorSection() {
       </div>
 
       {/* Logos only */}
-      <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
-        {sponsors.map((s, idx) => {
-          const logoCard = (
-            <div className="rounded-3xl border border-white/15 bg-white/5 p-5 shadow-sm backdrop-blur">
-              <div className="relative mx-auto h-16 w-full sm:h-20 md:h-24">
-                <Image
-                  src={s.logo}
-                  alt="Sponsor logo"
-                  fill
-                  sizes="(max-width: 640px) 45vw, (max-width: 1024px) 25vw, 240px"
-                  className="object-contain"
-                  priority={idx < 2} // keeps the first 2 crisp early
-                />
-              </div>
-            </div>
-          );
-
-          return s.url && s.url !== "#"
-            ? (
-              <a
-                key={s.logo}
-                href={s.url}
-                target="_blank"
-                rel="noreferrer"
-                className="block transition-transform hover:-translate-y-0.5"
-              >
-                {logoCard}
-              </a>
-            )
-            : (
-              <div key={s.logo} className="transition-transform hover:-translate-y-0.5">
-                {logoCard}
-              </div>
-            );
-        })}
+     <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
+  {sponsors.map((s, idx) => (
+    <div
+      key={s.logo}
+      className="rounded-3xl border border-white/15 bg-white/5 p-5 shadow-sm backdrop-blur transition-transform hover:-translate-y-0.5"
+    >
+      <div className="relative mx-auto h-16 w-full sm:h-20 md:h-24">
+        <Image
+          src={s.logo}
+          alt="Sponsor logo"
+          fill
+          sizes="(max-width: 640px) 45vw, (max-width: 1024px) 25vw, 240px"
+          className="object-contain"
+          priority={idx < 2}
+        />
       </div>
+    </div>
+  ))}
+</div>
+
 
       {/* optional contact line */}
       <div className="mt-6 text-sm text-slate-300">
