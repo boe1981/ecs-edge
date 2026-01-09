@@ -131,6 +131,21 @@ const nationalFaculty = [
     loc: "Kolkata",
     photo: "/faculty/narayan.jpg",
   },
+    {
+    name: "Dr. Amarnath Shaw",
+    title: "Consultant Cardiac Surgeon",
+    org: "Infinity Care Hospital",
+    loc: "Varanasi, India",
+    photo: "/faculty/amarnath.jpg",
+  },
+  {
+    name: "Dr. Sumbul Siddiqui",
+    title: "Consultant Cardiac Surgeon & Head of Department",
+    org: "DBASI SMHRC",
+    loc: "Nagpur, India",
+    photo: "/faculty/sumbul.jpg",
+  },
+
 ];
 
 const courseLeadership = [
