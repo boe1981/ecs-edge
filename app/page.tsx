@@ -744,10 +744,6 @@ export default function Page() {
                 >
                   <a href="#contact">Contact the Team</a>
                 </Button>
-
-                <div className="text-xs text-slate-400">
-                  Add brochure PDF / sponsorship link here (optional).
-                </div>
               </div>
             </div>
           </CardContent>
