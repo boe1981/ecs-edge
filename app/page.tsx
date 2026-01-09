@@ -472,11 +472,10 @@ export default function Page() {
                 <div className="flex items-start justify-between gap-4">
                   <div>
                     <div className="text-sm text-slate-300">Course Director</div>
-                    <div className="mt-1 text-xl font-semibold text-amber-300 relative inline-block">
-                      <span className="after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-gradient-to-r after:from-amber-400 after:to-yellow-300 after:opacity-90 after:rounded-full">
-                        Dr. Sandip Sardar
-                      </span>
-                    </div>
+                   <div className="mt-1 text-xl font-semibold text-slate-200">
+  Dr. Sandip Sardar
+</div>
+
                     <div className="mt-1 text-sm text-slate-200">
                       Senior Consultant Cardiac Surgeon
                     </div>
