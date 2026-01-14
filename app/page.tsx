@@ -113,8 +113,8 @@ const nationalFaculty = [
   },
   {
     name: "Dr. Ramprassath M S",
-    title: "Senior Consultant Cardiothoracic Surgeon",
-    loc: "Madurai",
+    title: "Senior Consultant and Chief Endoscopic Cardiac Surgeon",
+    loc: "Sri Ramakrishnon Hospital, Coimbatore",
     photo: "/faculty/Ram-prasath.jpg", // case sensitive
   },
   {
