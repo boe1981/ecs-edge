@@ -490,8 +490,8 @@ export default function Page() {
                   <div className="rounded-2xl border border-white/15 bg-slate-950/50 p-4">
                     <div className="text-sm font-semibold text-white">Program at a glance</div>
                     <ul className="mt-2 space-y-2 text-sm text-slate-200">
-                      <li>• Day 1: Live Surgery + ECS Interactive Core + Global Virtual Session</li>
-                      <li>• Day 2: Live-in-Box ECS + Interactive Discussion + Wet Lab</li>
+                      <li>• Day 1: Live Surgery + ECS Interactive Core + Live-in-Box ECS + Global Virtual Session</li>
+                      <li>• Day 2: Interactive Discussion + Wet Lab</li>
                       <li>• Focus: patient safety, reproducibility, and practical skill development</li>
                     </ul>
                   </div>
