@@ -667,7 +667,7 @@ export default function Page() {
           </div>
 
           <div className="rounded-2xl border border-white/15 bg-slate-900/50 p-4">
-            <div className="font-semibold text-white">16:00–18:30 • GLOBAL ECS (VIRTUAL)</div>
+            <div className="font-semibold text-white">15:00–18:30 • GLOBAL ECS (VIRTUAL)</div>
             <ul className="mt-2 space-y-1">
               <li>• Setup → precision in 3D totally endoscopic surgery — Jae Suk Yoo (South Korea)</li>
               <li>• Endoscopic Double Valve Replacement — Muhammad Ibrahim Azmi (Malaysia)</li>
