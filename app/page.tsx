@@ -491,7 +491,7 @@ export default function Page() {
                     <div className="text-sm font-semibold text-white">Program at a glance</div>
                     <ul className="mt-2 space-y-2 text-sm text-slate-200">
                       <li>• Day 1: Live Surgery + ECS Interactive Core + Live-in-Box ECS + Global Virtual Session</li>
-                      <li>• Day 2: Interactive Discussion + Wet Lab</li>
+                      <li>• Day 2: Interactive Discussion + Dry Lab + Wet Lab</li>
                       <li>• Focus: patient safety, reproducibility, and practical skill development</li>
                     </ul>
                   </div>
@@ -695,7 +695,7 @@ export default function Page() {
 
 <div className="rounded-2xl border border-white/15 bg-slate-900/50 p-4">
             <div className="font-semibold text-white">09:00–11:00 • ECS Dry Lab</div>
-            <div className="mt-2">Endoscopic Hand-Eye Coordination, Suturing</div>
+            <div className="mt-2">Hand-eye coordination, Suturing, Knotting, COR-KNOT and access-site closure</div>
           </div>
 
           <div className="rounded-2xl border border-white/15 bg-slate-900/50 p-4">
