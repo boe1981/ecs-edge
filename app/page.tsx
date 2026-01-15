@@ -713,14 +713,6 @@ export default function Page() {
             <div className="mt-2">Endoscopic MVR / Endoscopic AVR modules</div>
             <div className="mt-2 text-slate-300">Closing remarks • feedback • certificates</div>
           </div>
-
-          <div className="rounded-2xl border border-white/15 bg-slate-900/50 p-4">
-            <div className="font-semibold text-white">Invitation</div>
-            <p className="mt-2">
-              This focused academic program provides a clear, real-world roadmap for surgeons aiming to initiate or advance an Endoscopic Cardiac Surgery program.
-            </p>
-            <div className="mt-2 text-slate-300">Warm regards — Sandip Sardar, Course Director</div>
-          </div>
         </div>
       </div>
     </div>
