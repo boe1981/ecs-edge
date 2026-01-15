@@ -694,7 +694,7 @@ export default function Page() {
         </div>
 
 <div className="rounded-2xl border border-white/15 bg-slate-900/50 p-4">
-            <div className="font-semibold text-white">09:00–11:00 • ECS Wet Lab</div>
+            <div className="font-semibold text-white">09:00–11:00 • ECS Dry Lab</div>
             <div className="mt-2">Endoscopic Dry Lab</div>
             <div className="mt-2 text-slate-300">Closing remarks • feedback • certificates</div>
           </div>
