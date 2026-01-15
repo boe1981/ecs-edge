@@ -695,7 +695,7 @@ export default function Page() {
 
 <div className="rounded-2xl border border-white/15 bg-slate-900/50 p-4">
             <div className="font-semibold text-white">09:00–11:00 • ECS Dry Lab</div>
-            <div className="mt-2">Hand-eye coordination, Suturing, Knotting, COR-KNOT and access-site closure</div>
+            <div className="mt-2">Hand-eye coordination, Suturing, Knotting, COR-KNOT and Access-site closure</div>
           </div>
 
           <div className="rounded-2xl border border-white/15 bg-slate-900/50 p-4">
