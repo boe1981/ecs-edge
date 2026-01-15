@@ -646,11 +646,24 @@ export default function Page() {
           </div>
 
           <div className="rounded-2xl border border-white/15 bg-slate-900/50 p-4">
-            <div className="font-semibold text-white">09:00–14:00 • ECS INTERACTIVE CORE SESSION</div>
+            <div className="font-semibold text-white">09:00–11:00 • ECS INTERACTIVE CORE SESSION</div>
             <div className="mt-2">Why ECS • Case Selection • Preparation</div>
             <div>Anaesthesia (SLV, TEE, ERAS)</div>
             <div>Setup, Ports, Imaging • CPB in ECS</div>
             <div className="mt-2 text-slate-300">Sandip Sardar • Monalisa Datta</div>
+          </div>
+
+           <div className="mt-4 space-y-4 text-[15px] leading-relaxed text-slate-200">
+          <div className="rounded-2xl border border-white/15 bg-slate-900/50 p-4">
+            <div className="font-semibold text-white">11:00–14:00 • Live-in-Box ECS</div>
+            <ul className="mt-2 space-y-1">
+              <li>• Endoscopic Mitral Valve Replacement</li>
+              <li>• Endoscopic Aortic Valve Replacement</li>
+              <li>• Endoscopic Tricuspid Valve Repair</li>
+              <li>• Endoscopic BITA harvesting & Endo-CABG</li>
+              <li>• Port Access ASD Closure (without utility port)</li>
+              <li>• Video Recording & Editing</li>
+            </ul>
           </div>
 
           <div className="rounded-2xl border border-white/15 bg-slate-900/50 p-4">
@@ -680,17 +693,15 @@ export default function Page() {
           Live-in-Box ECS • Interactive Discussion • Wet Lab
         </div>
 
-        <div className="mt-4 space-y-4 text-[15px] leading-relaxed text-slate-200">
+<div className="rounded-2xl border border-white/15 bg-slate-900/50 p-4">
+            <div className="font-semibold text-white">09:00–11:00 • ECS Wet Lab</div>
+            <div className="mt-2">Endoscopic Dry Lab</div>
+            <div className="mt-2 text-slate-300">Closing remarks • feedback • certificates</div>
+          </div>
           <div className="rounded-2xl border border-white/15 bg-slate-900/50 p-4">
-            <div className="font-semibold text-white">09:00–11:00 • Live-in-Box ECS</div>
-            <ul className="mt-2 space-y-1">
-              <li>• Endoscopic Mitral Valve Replacement</li>
-              <li>• Endoscopic Aortic Valve Replacement</li>
-              <li>• Endoscopic Tricuspid Valve Repair</li>
-              <li>• Endoscopic BITA harvesting & Endo-CABG</li>
-              <li>• Port Access ASD Closure (without utility port)</li>
-              <li>• Video Recording & Editing</li>
-            </ul>
+            <div className="font-semibold text-white">11:00–14:00 • ECS Wet Lab</div>
+            <div className="mt-2">Endoscopic MVR / Endoscopic AVR modules</div>
+            <div className="mt-2 text-slate-300">Closing remarks • feedback • certificates</div>
           </div>
 
           <div className="rounded-2xl border border-white/15 bg-slate-900/50 p-4">
@@ -701,12 +712,6 @@ export default function Page() {
             <div className="mt-1">
               Perfusion: specialized circuit • modified cardioplegia • ECS protocols • troubleshooting
             </div>
-          </div>
-
-          <div className="rounded-2xl border border-white/15 bg-slate-900/50 p-4">
-            <div className="font-semibold text-white">11:00–14:00 • ECS Wet Lab</div>
-            <div className="mt-2">Endoscopic MVR / Endoscopic AVR modules</div>
-            <div className="mt-2 text-slate-300">Closing remarks • feedback • certificates</div>
           </div>
 
           <div className="rounded-2xl border border-white/15 bg-slate-900/50 p-4">
