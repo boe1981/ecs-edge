@@ -695,13 +695,7 @@ export default function Page() {
 
 <div className="rounded-2xl border border-white/15 bg-slate-900/50 p-4">
             <div className="font-semibold text-white">09:00–11:00 • ECS Dry Lab</div>
-            <div className="mt-2">Endoscopic Dry Lab</div>
-            <div className="mt-2 text-slate-300">Closing remarks • feedback • certificates</div>
-          </div>
-          <div className="rounded-2xl border border-white/15 bg-slate-900/50 p-4">
-            <div className="font-semibold text-white">11:00–14:00 • ECS Wet Lab</div>
-            <div className="mt-2">Endoscopic MVR / Endoscopic AVR modules</div>
-            <div className="mt-2 text-slate-300">Closing remarks • feedback • certificates</div>
+            <div className="mt-2">Endoscopic Hand-Eye Coordination, Suturing</div>
           </div>
 
           <div className="rounded-2xl border border-white/15 bg-slate-900/50 p-4">
@@ -712,6 +706,12 @@ export default function Page() {
             <div className="mt-1">
               Perfusion: specialized circuit • modified cardioplegia • ECS protocols • troubleshooting
             </div>
+          </div>
+
+           <div className="rounded-2xl border border-white/15 bg-slate-900/50 p-4">
+            <div className="font-semibold text-white">11:00–14:00 • ECS Wet Lab</div>
+            <div className="mt-2">Endoscopic MVR / Endoscopic AVR modules</div>
+            <div className="mt-2 text-slate-300">Closing remarks • feedback • certificates</div>
           </div>
 
           <div className="rounded-2xl border border-white/15 bg-slate-900/50 p-4">
