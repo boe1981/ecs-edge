@@ -614,7 +614,7 @@ export default function Page() {
     <h2 className="text-2xl font-semibold text-white md:text-3xl">Scientific Program</h2>
     <p className="mt-2 max-w-3xl text-sm leading-relaxed text-slate-200">
       Kolkata • 24–25 January — Live endoscopic and robotic surgeries, structured core teaching, global virtual sessions,
-      live-in-a-box demonstrations, and hands-on wet lab training.
+      live-in-a-box demonstrations, and hands-on dry lab and  wet lab training.
     </p>
   </div>
 
@@ -624,7 +624,7 @@ export default function Page() {
       <div className="p-6">
         <div className="text-xs font-semibold tracking-wide text-slate-200/90">DAY 1 • January 24</div>
         <div className="mt-1 text-base font-semibold text-white">
-          Live Surgery • ECS Interactive Core • Global ECS (Virtual)
+          Live Surgery • ECS Interactive Core • ECS Live-in-Box • Global ECS (Virtual)
         </div>
 
         <div className="mt-4 space-y-4 text-[15px] leading-relaxed text-slate-200">
@@ -690,7 +690,7 @@ export default function Page() {
       <div className="p-6">
         <div className="text-xs font-semibold tracking-wide text-slate-200/90">DAY 2 • January 25</div>
         <div className="mt-1 text-base font-semibold text-white">
-          Live-in-Box ECS • Interactive Discussion • Wet Lab
+          Dry Lab • Interactive Discussion • Wet Lab
         </div>
 
 <div className="rounded-2xl border border-white/15 bg-slate-900/50 p-4">
