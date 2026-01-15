@@ -671,12 +671,11 @@ export default function Page() {
             <ul className="mt-2 space-y-1">
               <li>• Setup → precision in 3D totally endoscopic surgery — Jae Suk Yoo (South Korea)</li>
               <li>• Endoscopic Double Valve Replacement — Muhammad Ibrahim Azmi (Malaysia)</li>
-<li>• Endoscopic Mitral Valve Replacement After MitraClip Failure: Technique & Outcomes — Evandro Lopes (Brazil)
-</li>
-<li>• From Endoscopic BITA to Mini-access CABG: Composite Grafts and Extensions to Maximize Both Mammaries — Evandro Lopes (Brazil)
-</li>
+              <li>• Endoscopic Mitral Valve Replacement After MitraClip Failure: Technique & Outcomes — Evandro Lopes (Brazil)</li>
+              <li>• From Endoscopic BITA to Mini-access CABG: Composite Grafts and Extensions to Maximize Both Mammaries — Evandro Lopes (Brazil)</li>
               <li>• Robotic Totally Endoscopic Mitral Valve Repair — Sheng (China)</li>
               <li>• Building an ECS program — Mario Castillo-Sang (USA)</li>
+              <li>• The Price of Elegance: Complications Unique to Totally Endoscopic Cardiac Surgery — Antonios Pitsis (Greece)</li>
               <li>• Technique of Endo-CABG — Abdullah Kaya (Belgium)</li>
               <li>• Totally endoscopic cardiac surgery via trocars without robotic assistance — Nguyen Cong Huu (Vietnam)</li>
             </ul>
