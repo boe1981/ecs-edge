@@ -537,7 +537,7 @@ export default function Page() {
             },
             {
               title: "Wet lab skill stations",
-              desc: "Dedicated stations for Totally Endoscopic Valve and CABG modules with coached repetitions.",
+              desc: "Dedicated stations for Totally Endoscopic Valve modules with coached repetitions.",
               icon: <Stethoscope className="h-5 w-5" />,
             },
           ].map((it) => (
