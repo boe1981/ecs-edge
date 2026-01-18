@@ -631,9 +631,6 @@ export default function Page() {
           <div className="rounded-2xl border border-white/15 bg-slate-900/50 p-4">
             <div className="font-semibold text-white">08:30–09:00</div>
             <div>Registration & Welcome</div>
-            <div className="mt-1 text-slate-300">
-              Guest Lecture: <span className="text-slate-100">Will the Heart Still Need Hands?</span> — Kunal Sarkar
-            </div>
           </div>
 
           <div className="rounded-2xl border border-white/15 bg-slate-900/50 p-4">
