@@ -655,7 +655,7 @@ export default function Page() {
 
            <div className="mt-4 space-y-4 text-[15px] leading-relaxed text-slate-200">
           <div className="rounded-2xl border border-white/15 bg-slate-900/50 p-4">
-            <div className="font-semibold text-white">11:00–14:00 • Live-in-Box ECS</div>
+            <div className="font-semibold text-white">11:00–14:00 • Endoscopic Cardiac Surgery in the Real World: Case-Based Learning</div>
             <ul className="mt-2 space-y-1">
               <li>• Endoscopic Mitral Valve Replacement</li>
               <li>• Endoscopic Aortic Valve Replacement</li>
